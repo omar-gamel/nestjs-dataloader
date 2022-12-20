@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Int!
+  name: String!
+}
+
+type Post {
+  id: Int!
+  title: String!
+  content: String!
+  isDone: Boolean!
+  userId: Float!
+  createdBy: User!
+}
+
+type Query {
+  posts: [Post!]!
+  post(id: Int!): Post!
+}
